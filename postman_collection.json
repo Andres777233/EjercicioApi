@@ -1,0 +1,44 @@
+{
+	"info": {
+		"name": "API Futbol",
+		"description": "Endpoints de la API de Futbol",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Equipos",
+			"item": [
+				{ "name": "Todos los equipos", "request": { "method": "GET", "url": { "raw": "http://localhost:8000/api/teams", "host": ["http://localhost:8000"], "path": ["api", "teams"] } } },
+				{ "name": "Equipo por ID", "request": { "method": "GET", "url": { "raw": "http://localhost:8000/api/teams/1", "host": ["http://localhost:8000"], "path": ["api", "teams", "1"] } } }
+			]
+		},
+		{
+			"name": "Jugadores",
+			"item": [
+				{ "name": "Todos los jugadores", "request": { "method": "GET", "url": { "raw": "http://localhost:8000/api/players", "host": ["http://localhost:8000"], "path": ["api", "players"] } } },
+				{ "name": "Jugador por ID", "request": { "method": "GET", "url": { "raw": "http://localhost:8000/api/players/1", "host": ["http://localhost:8000"], "path": ["api", "players", "1"] } } }
+			]
+		},
+		{
+			"name": "Juegos",
+			"item": [
+				{ "name": "Todos los juegos", "request": { "method": "GET", "url": { "raw": "http://localhost:8000/api/games", "host": ["http://localhost:8000"], "path": ["api", "games"] } } },
+				{ "name": "Juego por ID", "request": { "method": "GET", "url": { "raw": "http://localhost:8000/api/games/1", "host": ["http://localhost:8000"], "path": ["api", "games", "1"] } } }
+			]
+		},
+		{
+			"name": "Presidentes",
+			"item": [
+				{ "name": "Todos los presidentes", "request": { "method": "GET", "url": { "raw": "http://localhost:8000/api/presidents", "host": ["http://localhost:8000"], "path": ["api", "presidents"] } } },
+				{ "name": "Presidente por ID", "request": { "method": "GET", "url": { "raw": "http://localhost:8000/api/presidents/1", "host": ["http://localhost:8000"], "path": ["api", "presidents", "1"] } } }
+			]
+		},
+		{
+			"name": "Goles",
+			"item": [
+				{ "name": "Todos los goles", "request": { "method": "GET", "url": { "raw": "http://localhost:8000/api/goals", "host": ["http://localhost:8000"], "path": ["api", "goals"] } } },
+				{ "name": "Gol por ID", "request": { "method": "GET", "url": { "raw": "http://localhost:8000/api/goals/1", "host": ["http://localhost:8000"], "path": ["api", "goals", "1"] } } }
+			]
+		}
+	]
+}
