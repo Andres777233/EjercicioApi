@@ -9,6 +9,8 @@ class Team extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['name', 'city', 'stadium', 'capacity', 'year_of_foundation', 'president_id'];
+
     public function president()
     {
         return $this->belongsTo(President::class);
